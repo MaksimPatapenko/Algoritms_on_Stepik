@@ -14,3 +14,14 @@ Sample Output 1:
 Time Limit: 5 секунд
 Memory Limit: 256 MB
 """
+
+lst = []
+n = int(input())
+a, b = 1, n-1
+while b > a:
+    lst.append(a)
+    a += 1
+    b -= a
+lst.append(n-sum(lst))
+print(len(lst))
+print(*lst)
